@@ -3,7 +3,7 @@ def process_princes(prices, discount_percent):
 
     for price in prices:
         if price > 0:
-            discount = price * (1 - discount_percent)//100
+            discount = price * (1 - discount_percent/100)
             new.append(round(discount))
     return(new)
 
